@@ -529,7 +529,7 @@ const Index = () => {
                   sensitive cargo.
                 </p>
                 <div className="text-sm space-y-1">
-                  <div>�� Multi-temperature zones</div>
+                  <div>• Multi-temperature zones</div>
                   <div>• Continuous monitoring</div>
                   <div>• Backup power systems</div>
                   <div>• Temperature logging</div>
@@ -654,7 +654,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-gray-600 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
@@ -776,7 +776,7 @@ const Index = () => {
             </div>
           </div>
 
-          <Separator className="my-8 bg-gray-800" />
+          <Separator className="my-8 bg-gray-700" />
 
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400">
