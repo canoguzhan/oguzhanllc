@@ -795,12 +795,6 @@ const Index = () => {
               >
                 Terms of Service
               </a>
-              <a
-                href="/dot-compliance"
-                className="text-sm text-gray-400 hover:text-white"
-              >
-                DOT Compliance
-              </a>
             </div>
           </div>
         </div>
