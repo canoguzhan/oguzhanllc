@@ -120,6 +120,61 @@ const Index = () => {
                 Request Quote
               </Button>
             </div>
+
+            {/* Hero Images */}
+            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+              <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  alt="Long-haul truck on highway"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-3 bg-white">
+                  <h4 className="font-semibold text-sm text-center">
+                    Long-Distance Transport
+                  </h4>
+                </div>
+              </div>
+
+              <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  alt="Warehouse logistics operation"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-3 bg-white">
+                  <h4 className="font-semibold text-sm text-center">
+                    Warehouse Solutions
+                  </h4>
+                </div>
+              </div>
+
+              <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  alt="Cargo loading operation"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-3 bg-white">
+                  <h4 className="font-semibold text-sm text-center">
+                    Cargo Handling
+                  </h4>
+                </div>
+              </div>
+
+              <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  alt="Professional truck fleet"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-3 bg-white">
+                  <h4 className="font-semibold text-sm text-center">
+                    Modern Fleet
+                  </h4>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
