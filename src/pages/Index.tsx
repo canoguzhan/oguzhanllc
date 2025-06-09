@@ -207,6 +207,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+
       {/* Key Features */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -414,7 +415,16 @@ const Index = () => {
                 </p>
               </div>
 
-              <Button size="lg">Learn More About Us</Button>
+              <Button
+                size="lg"
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                Learn More About Us
+              </Button>
             </div>
 
             <div className="space-y-6">
@@ -677,23 +687,8 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-gray-600 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="text-lg px-8"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Get Free Quote
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-lg px-8"
-              onClick={() => window.open('tel:+15551234567', '_self')}
-            >
-              Call (555) 123-4567
-            </Button>
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
               <div className="mb-4">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe8cf38e3baf04f94a1f5f6a7714c5a89%2Fd0f1444a40d8431e9a36f1cb7f958f7e"
@@ -804,10 +799,37 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>(555) 123-4567</li>
-                <li>info@oguzhanllc.com</li>
+                <li>
+                  <button
+                    onClick={() => window.open("tel:+15551234567", "_self")}
+                    className="hover:text-white transition-colors text-left"
+                  >
+                    (555) 123-4567
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() =>
+                      window.open("mailto:info@oguzhanllc.com", "_self")
+                    }
+                    className="hover:text-white transition-colors text-left"
+                  >
+                    info@oguzhanllc.com
+                  </button>
+                </li>
                 <li>24/7 Emergency Service</li>
-                <li>Request Quote</li>
+                <li>
+                  <button
+                    onClick={() =>
+                      document
+                        .getElementById("contact")
+                        ?.scrollIntoView({ behavior: "smooth" })
+                    }
+                    className="hover:text-white transition-colors text-left"
+                  >
+                    Request Quote
+                  </button>
+                </li>
               </ul>
             </div>
           </div>
