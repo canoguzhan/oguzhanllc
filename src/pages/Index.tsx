@@ -95,8 +95,71 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-gray-100 py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 overflow-hidden">
+        {/* Scrolling Background Images */}
+        <div className="absolute inset-0 z-0">
+          <div className="flex animate-scroll-left">
+            {/* First set of images */}
+            <div className="flex min-w-full">
+              <div
+                className="w-1/4 h-full bg-cover bg-center opacity-20"
+                style={{
+                  backgroundImage: `url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
+                }}
+              ></div>
+              <div
+                className="w-1/4 h-full bg-cover bg-center opacity-20"
+                style={{
+                  backgroundImage: `url('https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
+                }}
+              ></div>
+              <div
+                className="w-1/4 h-full bg-cover bg-center opacity-20"
+                style={{
+                  backgroundImage: `url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
+                }}
+              ></div>
+              <div
+                className="w-1/4 h-full bg-cover bg-center opacity-20"
+                style={{
+                  backgroundImage: `url('https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
+                }}
+              ></div>
+            </div>
+            {/* Duplicate set for seamless loop */}
+            <div className="flex min-w-full">
+              <div
+                className="w-1/4 h-full bg-cover bg-center opacity-20"
+                style={{
+                  backgroundImage: `url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
+                }}
+              ></div>
+              <div
+                className="w-1/4 h-full bg-cover bg-center opacity-20"
+                style={{
+                  backgroundImage: `url('https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
+                }}
+              ></div>
+              <div
+                className="w-1/4 h-full bg-cover bg-center opacity-20"
+                style={{
+                  backgroundImage: `url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
+                }}
+              ></div>
+              <div
+                className="w-1/4 h-full bg-cover bg-center opacity-20"
+                style={{
+                  backgroundImage: `url('https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
+                }}
+              ></div>
+            </div>
+          </div>
+          {/* Overlay gradient */}
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-50/90 to-gray-100/90"></div>
+        </div>
+
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-4">
               Professional Transportation Solutions
@@ -120,65 +183,9 @@ const Index = () => {
                 Request Quote
               </Button>
             </div>
-
-            {/* Hero Images */}
-            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-              <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                  alt="Long-haul truck on highway"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-3 bg-white">
-                  <h4 className="font-semibold text-sm text-center">
-                    Long-Distance Transport
-                  </h4>
-                </div>
-              </div>
-
-              <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                  alt="Warehouse logistics operation"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-3 bg-white">
-                  <h4 className="font-semibold text-sm text-center">
-                    Warehouse Solutions
-                  </h4>
-                </div>
-              </div>
-
-              <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                  alt="Cargo loading operation"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-3 bg-white">
-                  <h4 className="font-semibold text-sm text-center">
-                    Cargo Handling
-                  </h4>
-                </div>
-              </div>
-
-              <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img
-                  src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                  alt="Professional truck fleet"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-3 bg-white">
-                  <h4 className="font-semibold text-sm text-center">
-                    Modern Fleet
-                  </h4>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
-
       {/* Key Features */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -522,7 +529,7 @@ const Index = () => {
                   sensitive cargo.
                 </p>
                 <div className="text-sm space-y-1">
-                  <div>• Multi-temperature zones</div>
+                  <div>�� Multi-temperature zones</div>
                   <div>• Continuous monitoring</div>
                   <div>• Backup power systems</div>
                   <div>• Temperature logging</div>
