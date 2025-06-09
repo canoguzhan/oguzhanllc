@@ -491,7 +491,7 @@ const Index = () => {
                   <div>• Heavy-duty construction</div>
                   <div>• Tie-down points</div>
                   <div>• Tarping available</div>
-                  <div>��� Oversized load capable</div>
+                  <div>• Oversized load capable</div>
                 </div>
               </CardContent>
             </Card>
@@ -630,20 +630,76 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>Long-Distance Freight</li>
-                <li>Local & Regional</li>
-                <li>Specialized Cargo</li>
-                <li>Emergency Transport</li>
+                <li>
+                  <a
+                    href="/services/long-distance-freight"
+                    className="hover:text-white transition-colors"
+                  >
+                    Long-Distance Freight
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/services/local-regional"
+                    className="hover:text-white transition-colors"
+                  >
+                    Local & Regional
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/services/specialized-cargo"
+                    className="hover:text-white transition-colors"
+                  >
+                    Specialized Cargo
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/services/emergency-transport"
+                    className="hover:text-white transition-colors"
+                  >
+                    Emergency Transport
+                  </a>
+                </li>
               </ul>
             </div>
 
             <div>
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>About Us</li>
-                <li>Our Fleet</li>
-                <li>Safety Standards</li>
-                <li>Careers</li>
+                <li>
+                  <a
+                    href="#about"
+                    className="hover:text-white transition-colors"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#fleet"
+                    className="hover:text-white transition-colors"
+                  >
+                    Our Fleet
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/company/safety-standards"
+                    className="hover:text-white transition-colors"
+                  >
+                    Safety Standards
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/company/careers"
+                    className="hover:text-white transition-colors"
+                  >
+                    Careers
+                  </a>
+                </li>
               </ul>
             </div>
 
