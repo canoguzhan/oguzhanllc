@@ -38,7 +38,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fe8cf38e3baf04f94a1f5f6a7714c5a89%2F55d062d908cd4961acb7baf0e313d715"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fe8cf38e3baf04f94a1f5f6a7714c5a89%2Fd0f1444a40d8431e9a36f1cb7f958f7e"
                 alt="OGUZHAN LLC Logistics"
                 className="h-[100px] w-auto"
                 onError={(e) => {
@@ -665,13 +665,22 @@ const Index = () => {
               © 2024 OGUZHAN LLC. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-sm text-gray-400 hover:text-white">
+              <a
+                href="/privacy-policy"
+                className="text-sm text-gray-400 hover:text-white"
+              >
                 Privacy Policy
               </a>
-              <a href="#" className="text-sm text-gray-400 hover:text-white">
+              <a
+                href="/terms-of-service"
+                className="text-sm text-gray-400 hover:text-white"
+              >
                 Terms of Service
               </a>
-              <a href="#" className="text-sm text-gray-400 hover:text-white">
+              <a
+                href="/dot-compliance"
+                className="text-sm text-gray-400 hover:text-white"
+              >
                 DOT Compliance
               </a>
             </div>
