@@ -103,67 +103,37 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
-        {/* Scrolling Background Images */}
+      <section className="relative py-20 overflow-hidden min-h-[600px]">
+        {/* Video Background */}
         <div className="absolute inset-0 z-0">
-          <div className="flex animate-scroll-left">
-            {/* First set of images */}
-            <div className="flex min-w-full">
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-            </div>
-            {/* Duplicate set for seamless loop */}
-            <div className="flex min-w-full">
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-            </div>
-          </div>
-          {/* Overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-50/90 to-gray-100/90"></div>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover opacity-30"
+            poster="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+          >
+            <source
+              src="https://cdn.coverr.co/videos/coverr-truck-driving-on-a-highway-4735/1080p.mp4"
+              type="video/mp4"
+            />
+            <source
+              src="https://assets.mixkit.co/videos/preview/mixkit-truck-driving-on-a-highway-1949-large.mp4"
+              type="video/mp4"
+            />
+            {/* Fallback for browsers that don't support video */}
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{
+                backgroundImage: `url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
+              }}
+            ></div>
+          </video>
+          {/* Dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900/60 to-gray-800/60"></div>
+          {/* Additional branded overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
         </div>
 
         {/* Content */}
@@ -172,11 +142,11 @@ const Index = () => {
             <Badge variant="secondary" className="mb-4">
               Professional Transportation Solutions
             </Badge>
-            <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
               Reliable Trucking <br />
-              <span className="text-primary">You Can Trust</span>
+              <span className="text-primary drop-shadow-lg">You Can Trust</span>
             </h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto drop-shadow-md">
               OGUZHAN LLC provides professional freight transportation and
               logistics services across the nation. Safe, timely, and
               cost-effective solutions for your business needs.
