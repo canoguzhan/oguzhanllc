@@ -1,9 +1,9 @@
 import emailjs from "@emailjs/browser";
 
 // EmailJS configuration
-const EMAILJS_SERVICE_ID = "service_oguzhan_llc";
-const EMAILJS_TEMPLATE_ID = "template_quote_request";
-const EMAILJS_PUBLIC_KEY = "YOUR_EMAILJS_PUBLIC_KEY"; // You'll need to replace this with your actual key
+const EMAILJS_SERVICE_ID = "service_zkno9hf";
+const EMAILJS_TEMPLATE_ID = "template_96ne05o";
+const EMAILJS_PUBLIC_KEY = "rQ0KIv6kNnnrhlKJ7";
 
 // Initialize EmailJS
 emailjs.init(EMAILJS_PUBLIC_KEY);
@@ -77,7 +77,7 @@ export const sendContactEmail = async (
 
     const response = await emailjs.send(
       EMAILJS_SERVICE_ID,
-      "template_contact_form", // Different template for general contact
+      EMAILJS_TEMPLATE_ID, // Using the same template for now
       templateParams,
     );
 

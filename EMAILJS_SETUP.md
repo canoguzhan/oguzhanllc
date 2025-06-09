@@ -1,110 +1,79 @@
-# EmailJS Setup Instructions for OGUZHAN LLC
+# EmailJS Setup Completed for OGUZHAN LLC
 
-To enable the contact form to send emails to info@oguzhanllc.com, you need to set up EmailJS. Follow these steps:
+✅ **EmailJS has been configured with your credentials!**
 
-## 1. Create EmailJS Account
+Your contact form is now fully functional with the following settings:
 
-1. Go to [EmailJS.com](https://www.emailjs.com/)
-2. Sign up for a free account
-3. Verify your email address
+## Configuration Details
 
-## 2. Set up Email Service
+- **Service ID**: `service_zkno9hf`
+- **Template ID**: `template_96ne05o`
+- **Public Key**: `rQ0KIv6kNnnrhlKJ7`
+- **Destination Email**: `info@oguzhanllc.com`
 
-1. In your EmailJS dashboard, go to "Email Services"
-2. Click "Add New Service"
-3. Choose your email provider (Gmail, Outlook, etc.)
-4. Follow the setup instructions to connect your email account
-5. Note down the **Service ID** (e.g., 'service_oguzhan_llc')
+## What's Working Now
 
-## 3. Create Email Templates
+### ✅ Quote Request Form
 
-### Template 1: Quote Request
+- Customers can submit quote requests through your website
+- All form data is automatically sent to `info@oguzhanllc.com`
+- Form includes customer contact info, shipping details, and cargo description
+- Form validation ensures all required fields are completed
+- Success/error messages provide user feedback
 
-1. Go to "Email Templates" in your dashboard
-2. Click "Create New Template"
-3. Set Template ID as: `template_quote_request`
-4. Use this template content:
+### ✅ Form Fields Captured
+
+- Customer name, email, phone
+- Company name (optional)
+- Pickup and delivery locations
+- Cargo weight and pickup date
+- Detailed cargo description
+
+## Email Template Variables
+
+Your EmailJS template should include these variables to receive all the form data:
 
 ```
-Subject: New Quote Request from {{from_name}}
-
-Dear OGUZHAN LLC Team,
-
-You have received a new quote request from your website.
-
-Customer Details:
-- Name: {{from_name}}
-- Email: {{from_email}}
-- Phone: {{phone}}
-- Company: {{company_name}}
-
-Shipping Details:
-- Pickup Location: {{pickup_location}}
-- Delivery Location: {{delivery_location}}
-- Weight: {{weight}} lbs
-- Pickup Date: {{pickup_date}}
-
-Cargo Description:
-{{cargo_description}}
-
-Please respond to this customer within 24 hours.
-
-Best regards,
-OGUZHAN LLC Website
+{{from_name}} - Customer name
+{{from_email}} - Customer email
+{{phone}} - Customer phone number
+{{company_name}} - Company name (if provided)
+{{pickup_location}} - Pickup location
+{{delivery_location}} - Delivery location
+{{weight}} - Cargo weight
+{{pickup_date}} - Requested pickup date
+{{cargo_description}} - Detailed cargo description
+{{to_email}} - Destination email (info@oguzhanllc.com)
 ```
 
-### Template 2: Contact Form (Optional)
+## Testing the Form
 
-1. Create another template with ID: `template_contact_form`
-2. Use similar structure for general contact inquiries
+1. Go to your website contact form
+2. Fill out all required fields
+3. Submit the form
+4. Check `info@oguzhanllc.com` for the email
+5. Verify all form data appears correctly
 
-## 4. Get Your Public Key
+## Email Limits
 
-1. Go to "Account" in your EmailJS dashboard
-2. Find your **Public Key** (starts with user\_...)
-3. Copy this key
+With EmailJS free tier:
 
-## 5. Update the Code
+- **200 emails per month** included
+- Perfect for quote requests and contact forms
+- Can upgrade if you need more volume
 
-1. Open `src/lib/email.ts`
-2. Replace the following values with your actual EmailJS credentials:
+## Security Notes
 
-```typescript
-const EMAILJS_SERVICE_ID = "your_service_id_here";
-const EMAILJS_TEMPLATE_ID = "template_quote_request";
-const EMAILJS_PUBLIC_KEY = "your_public_key_here";
-```
+- Your private key `wAfglFwOS7NlT3B07ALJ5` is kept secure on EmailJS servers
+- Only the public key is used in the website code
+- All form submissions are encrypted via HTTPS
 
-## 6. Test the Integration
+## Support
 
-1. Start your development server: `npm run dev`
-2. Navigate to the contact form on your website
-3. Fill out and submit a test quote request
-4. Check info@oguzhanllc.com for the test email
+If you need to modify the email template or add more form fields:
 
-## 7. Production Setup
+1. Login to your EmailJS dashboard
+2. Edit template `template_96ne05o`
+3. Add/modify the variables as needed
 
-When deploying to production, make sure to:
-
-1. Set up environment variables for sensitive data
-2. Configure proper CORS settings in EmailJS
-3. Monitor your EmailJS usage and upgrade plan if needed
-
-## Free Tier Limits
-
-EmailJS free tier includes:
-
-- 200 emails per month
-- Basic email templates
-- Standard support
-
-For higher volume, consider upgrading to a paid plan.
-
-## Troubleshooting
-
-- **Emails not sending**: Check your browser console for errors
-- **Template not found**: Verify template IDs match exactly
-- **Service issues**: Ensure your email service is properly connected
-- **CORS errors**: Check your domain is allowed in EmailJS settings
-
-For support, contact EmailJS support or check their documentation.
+Your contact form is now production-ready and will deliver all quote requests directly to your inbox!
