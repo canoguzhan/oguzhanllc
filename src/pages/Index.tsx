@@ -86,7 +86,15 @@ const Index = () => {
               >
                 Contact
               </a>
-              <Button size="sm" className="ml-4">
+              <Button
+                size="sm"
+                className="ml-4"
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
                 Get Quote
               </Button>
             </nav>
@@ -174,11 +182,24 @@ const Index = () => {
               cost-effective solutions for your business needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8">
+              <Button
+                size="lg"
+                className="text-lg px-8"
+                onClick={() => window.open("tel:+15551234567", "_self")}
+              >
                 <Phone className="mr-2 h-5 w-5" />
                 Call Now
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8">
+              <Button
+                variant="outline"
+                size="lg"
+                className="text-lg px-8"
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
                 <FileText className="mr-2 h-5 w-5" />
                 Request Quote
               </Button>
