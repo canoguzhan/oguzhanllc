@@ -1,0 +1,55 @@
+🚛 NEW QUOTE REQUEST - OGUZHAN LLC
+============================================
+
+⏰ URGENT: Response Required Within 24 Hours
+
+============================================
+👤 CUSTOMER INFORMATION
+============================================
+
+Full Name: {{from_name}}
+Email: {{from_email}}
+Phone: {{phone}}
+Company: {{company_name}}
+
+============================================
+📦 SHIPPING INFORMATION
+============================================
+
+Pickup Location: {{pickup_location}}
+Delivery Location: {{delivery_location}}
+Cargo Weight: {{weight}} lbs
+Requested Pickup Date: {{pickup_date}}
+
+============================================
+📋 CARGO DESCRIPTION
+============================================
+
+{{cargo_description}}
+
+============================================
+✅ NEXT STEPS
+============================================
+
+1. Review customer requirements and cargo details
+2. Calculate pricing based on route and weight  
+3. Contact customer within 24 hours with quote
+4. Schedule pickup if quote is accepted
+
+============================================
+📞 CONTACT CUSTOMER
+============================================
+
+📞 Call: {{phone}}
+✉️ Email: {{from_email}}
+
+============================================
+OGUZHAN LLC LOGISTICS
+============================================
+
+📞 (929) 928-5805 | (227) 250-2476
+✉️ info@oguzhanllc.com
+🌐 24/7 Professional Transportation Services
+
+This quote request was submitted through the OGUZHAN LLC website.
+Please respond promptly to maintain excellent customer service.

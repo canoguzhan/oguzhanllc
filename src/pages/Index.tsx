@@ -9,6 +9,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { QuoteForm } from "@/components/QuoteForm";
+import { ImageSlider } from "@/components/ImageSlider";
 import {
   Truck,
   MapPin,
@@ -205,6 +206,79 @@ const Index = () => {
               </Button>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Image Slider Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <Badge variant="secondary" className="mb-4">
+              Our Operations
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              OGUZHAN LLC in Action
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              See our professional fleet and operations in action. From
+              long-haul transport to local deliveries, we handle it all with
+              precision and care.
+            </p>
+          </div>
+
+          <ImageSlider
+            slides={[
+              {
+                id: 1,
+                image:
+                  "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                title: "Cross-Country Excellence",
+                description:
+                  "Our professional drivers navigate America's highways safely and efficiently, delivering your cargo on time, every time.",
+                category: "Long-Distance Transport",
+              },
+              {
+                id: 2,
+                image:
+                  "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80",
+                title: "Modern Warehouse Operations",
+                description:
+                  "State-of-the-art logistics facilities with advanced inventory management and secure storage solutions.",
+                category: "Logistics Solutions",
+              },
+              {
+                id: 3,
+                image:
+                  "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                title: "Professional Fleet",
+                description:
+                  "Our modern truck fleet is equipped with the latest technology for safety, efficiency, and real-time tracking.",
+                category: "Modern Fleet",
+              },
+              {
+                id: 4,
+                image:
+                  "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                title: "Specialized Cargo Handling",
+                description:
+                  "Expert handling of specialized cargo with certified equipment and trained professionals for secure transport.",
+                category: "Specialized Services",
+              },
+              {
+                id: 5,
+                image:
+                  "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                title: "24/7 Operations Center",
+                description:
+                  "Round-the-clock monitoring and dispatch services ensuring your shipments are tracked and managed professionally.",
+                category: "Operations",
+              },
+            ]}
+            autoPlay={true}
+            autoPlayInterval={5000}
+            showControls={true}
+            showIndicators={true}
+          />
         </div>
       </section>
 

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Quote Request - OGUZHAN LLC</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8f9fa;
+      }
+      .container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      .header {
+        background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+      }
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .tagline {
+        font-size: 14px;
+        opacity: 0.9;
+      }
+      .content {
+        padding: 30px 20px;
+      }
+      .alert {
+        background-color: #ce2827;
+        color: white;
+        padding: 15px;
+        border-radius: 6px;
+        margin-bottom: 25px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .section {
+        margin-bottom: 25px;
+      }
+      .section-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ce2827;
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+      }
+      .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+      .info-item {
+        background-color: #f9fafb;
+        padding: 15px;
+        border-radius: 6px;
+        border-left: 4px solid #ce2827;
+      }
+      .info-label {
+        font-weight: bold;
+        color: #374151;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+      .info-value {
+        color: #6b7280;
+        font-size: 16px;
+      }
+      .description-box {
+        background-color: #f3f4f6;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        padding: 20px;
+        margin-top: 15px;
+      }
+      .footer {
+        background-color: #f9fafb;
+        padding: 20px;
+        text-align: center;
+        border-top: 1px solid #e5e7eb;
+      }
+      .cta-buttons {
+        text-align: center;
+        margin: 25px 0;
+      }
+      .cta-button {
+        display: inline-block;
+        background-color: #ce2827;
+        color: white;
+        text-decoration: none;
+        padding: 12px 25px;
+        border-radius: 6px;
+        font-weight: bold;
+        margin: 0 10px;
+      }
+      .priority {
+        background-color: #fef3c7;
+        border: 1px solid #f59e0b;
+        color: #92400e;
+        padding: 10px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+      }
+      @media (max-width: 600px) {
+        .info-grid {
+          grid-template-columns: 1fr;
+        }
+        body {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="logo">OGUZHAN LLC</div>
+        <div class="tagline">Professional Trucking & Logistics</div>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+        <!-- Alert -->
+        <div class="alert">🚛 NEW QUOTE REQUEST RECEIVED</div>
+
+        <!-- Priority Notice -->
+        <div class="priority">⏰ Response Required Within 24 Hours</div>
+
+        <!-- Customer Information -->
+        <div class="section">
+          <div class="section-title">👤 Customer Information</div>
+          <div class="info-grid">
+            <div class="info-item">
+              <div class="info-label">Full Name</div>
+              <div class="info-value">{{from_name}}</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Email Address</div>
+              <div class="info-value">{{from_email}}</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Phone Number</div>
+              <div class="info-value">{{phone}}</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Company Name</div>
+              <div class="info-value">{{company_name}}</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shipping Details -->
+        <div class="section">
+          <div class="section-title">📦 Shipping Information</div>
+          <div class="info-grid">
+            <div class="info-item">
+              <div class="info-label">Pickup Location</div>
+              <div class="info-value">{{pickup_location}}</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Delivery Location</div>
+              <div class="info-value">{{delivery_location}}</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Cargo Weight</div>
+              <div class="info-value">{{weight}} lbs</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Requested Pickup Date</div>
+              <div class="info-value">{{pickup_date}}</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cargo Description -->
+        <div class="section">
+          <div class="section-title">📋 Cargo Description</div>
+          <div class="description-box">
+            <p><strong>Customer Details:</strong></p>
+            <p>{{cargo_description}}</p>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta-buttons">
+          <a href="tel:{{phone}}" class="cta-button">📞 Call Customer</a>
+          <a href="mailto:{{from_email}}" class="cta-button">✉️ Send Email</a>
+        </div>
+
+        <!-- Next Steps -->
+        <div class="section">
+          <div class="section-title">✅ Next Steps</div>
+          <div
+            style="
+              background-color: #ecfdf5;
+              border: 1px solid #10b981;
+              border-radius: 6px;
+              padding: 15px;
+            "
+          >
+            <ul style="margin: 0; padding-left: 20px">
+              <li>Review customer requirements and cargo details</li>
+              <li>Calculate pricing based on route and weight</li>
+              <li>Contact customer within 24 hours with quote</li>
+              <li>Schedule pickup if quote is accepted</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p><strong>OGUZHAN LLC Logistics</strong></p>
+        <p>📞 (929) 928-5805 | (227) 250-2476</p>
+        <p>✉️ info@oguzhanllc.com</p>
+        <p>🌐 24/7 Professional Transportation Services</p>
+        <hr
+          style="border: none; border-top: 1px solid #e5e7eb; margin: 15px 0"
+        />
+        <p style="font-size: 12px; color: #6b7280">
+          This quote request was submitted through the OGUZHAN LLC website
+          contact form.<br />
+          Please respond promptly to maintain our excellent customer service
+          standards.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
