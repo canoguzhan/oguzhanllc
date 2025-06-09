@@ -9,7 +9,6 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { QuoteForm } from "@/components/QuoteForm";
-import { ImageSlider } from "@/components/ImageSlider";
 import {
   Truck,
   MapPin,
@@ -104,67 +103,37 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
-        {/* Scrolling Background Images */}
+      <section className="relative py-20 overflow-hidden min-h-[600px]">
+        {/* Video Background */}
         <div className="absolute inset-0 z-0">
-          <div className="flex animate-scroll-left">
-            {/* First set of images */}
-            <div className="flex min-w-full">
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-            </div>
-            {/* Duplicate set for seamless loop */}
-            <div className="flex min-w-full">
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-              <div
-                className="w-1/4 h-full bg-cover bg-center opacity-20"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
-                }}
-              ></div>
-            </div>
-          </div>
-          {/* Overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-50/90 to-gray-100/90"></div>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover opacity-30"
+            poster="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+          >
+            <source
+              src="https://cdn.coverr.co/videos/coverr-truck-driving-on-a-highway-4735/1080p.mp4"
+              type="video/mp4"
+            />
+            <source
+              src="https://assets.mixkit.co/videos/preview/mixkit-truck-driving-on-a-highway-1949-large.mp4"
+              type="video/mp4"
+            />
+            {/* Fallback for browsers that don't support video */}
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{
+                backgroundImage: `url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')`,
+              }}
+            ></div>
+          </video>
+          {/* Dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900/60 to-gray-800/60"></div>
+          {/* Additional branded overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
         </div>
 
         {/* Content */}
@@ -173,11 +142,11 @@ const Index = () => {
             <Badge variant="secondary" className="mb-4">
               Professional Transportation Solutions
             </Badge>
-            <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
               Reliable Trucking <br />
-              <span className="text-primary">You Can Trust</span>
+              <span className="text-primary drop-shadow-lg">You Can Trust</span>
             </h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto drop-shadow-md">
               OGUZHAN LLC provides professional freight transportation and
               logistics services across the nation. Safe, timely, and
               cost-effective solutions for your business needs.
@@ -206,79 +175,6 @@ const Index = () => {
               </Button>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Image Slider Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge variant="secondary" className="mb-4">
-              Our Operations
-            </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              OGUZHAN LLC in Action
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              See our professional fleet and operations in action. From
-              long-haul transport to local deliveries, we handle it all with
-              precision and care.
-            </p>
-          </div>
-
-          <ImageSlider
-            slides={[
-              {
-                id: 1,
-                image:
-                  "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-                title: "Cross-Country Excellence",
-                description:
-                  "Our professional drivers navigate America's highways safely and efficiently, delivering your cargo on time, every time.",
-                category: "Long-Distance Transport",
-              },
-              {
-                id: 2,
-                image:
-                  "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80",
-                title: "Modern Warehouse Operations",
-                description:
-                  "State-of-the-art logistics facilities with advanced inventory management and secure storage solutions.",
-                category: "Logistics Solutions",
-              },
-              {
-                id: 3,
-                image:
-                  "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-                title: "Professional Fleet",
-                description:
-                  "Our modern truck fleet is equipped with the latest technology for safety, efficiency, and real-time tracking.",
-                category: "Modern Fleet",
-              },
-              {
-                id: 4,
-                image:
-                  "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-                title: "Specialized Cargo Handling",
-                description:
-                  "Expert handling of specialized cargo with certified equipment and trained professionals for secure transport.",
-                category: "Specialized Services",
-              },
-              {
-                id: 5,
-                image:
-                  "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-                title: "24/7 Operations Center",
-                description:
-                  "Round-the-clock monitoring and dispatch services ensuring your shipments are tracked and managed professionally.",
-                category: "Operations",
-              },
-            ]}
-            autoPlay={true}
-            autoPlayInterval={5000}
-            showControls={true}
-            showIndicators={true}
-          />
         </div>
       </section>
 
