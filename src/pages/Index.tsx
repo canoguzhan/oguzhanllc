@@ -491,7 +491,7 @@ const Index = () => {
                   <div>• Heavy-duty construction</div>
                   <div>• Tie-down points</div>
                   <div>• Tarping available</div>
-                  <div>• Oversized load capable</div>
+                  <div>��� Oversized load capable</div>
                 </div>
               </CardContent>
             </Card>
@@ -598,7 +598,7 @@ const Index = () => {
             <div>
               <div className="mb-4">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fe8cf38e3baf04f94a1f5f6a7714c5a89%2F55d062d908cd4961acb7baf0e313d715"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fe8cf38e3baf04f94a1f5f6a7714c5a89%2Fd0f1444a40d8431e9a36f1cb7f958f7e"
                   alt="OGUZHAN LLC Logistics"
                   className="h-10 w-auto brightness-0 invert"
                   onError={(e) => {
