@@ -240,7 +240,7 @@ const PrivacyPolicy = () => {
                   <p className="text-muted-foreground">
                     Email: privacy@oguzhanllc.com
                   </p>
-                  <p className="text-muted-foreground">Phone: (555) 123-4567</p>
+                  <p className="text-muted-foreground">Phone: (929) 928-5805</p>
                 </div>
                 <div>
                   <p className="font-semibold">Response Time</p>

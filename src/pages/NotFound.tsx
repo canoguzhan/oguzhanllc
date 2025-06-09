@@ -49,7 +49,7 @@ const NotFound = () => {
 
         <div className="mt-12 text-sm text-muted-foreground">
           <p>Need help? Contact OGUZHAN LLC:</p>
-          <p className="font-medium text-foreground">(555) 123-4567</p>
+          <p className="font-medium text-foreground">(929) 928-5805</p>
         </div>
       </div>
     </div>

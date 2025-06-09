@@ -321,12 +321,12 @@ const TermsOfService = () => {
                   <p className="text-muted-foreground">
                     Email: support@oguzhanllc.com
                   </p>
-                  <p className="text-muted-foreground">Phone: (555) 123-4567</p>
+                  <p className="text-muted-foreground">Phone: (929) 928-5805</p>
                 </div>
                 <div>
                   <p className="font-semibold">Emergency Contact</p>
                   <p className="text-muted-foreground">24/7 Emergency Line</p>
-                  <p className="text-muted-foreground">Phone: (555) 123-4567</p>
+                  <p className="text-muted-foreground">Phone: (227) 250-2476</p>
                   <p className="text-muted-foreground">
                     For urgent shipment issues
                   </p>
