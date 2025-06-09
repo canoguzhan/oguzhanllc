@@ -38,9 +38,9 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <img
-                src="/oguzhan-logo.svg"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fe8cf38e3baf04f94a1f5f6a7714c5a89%2F55d062d908cd4961acb7baf0e313d715"
                 alt="OGUZHAN LLC Logistics"
-                className="h-12 w-auto"
+                className="h-[100px] w-auto"
                 onError={(e) => {
                   // Fallback to text if logo fails to load
                   const target = e.target as HTMLImageElement;
