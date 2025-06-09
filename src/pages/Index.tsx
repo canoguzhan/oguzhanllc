@@ -36,18 +36,12 @@ const Index = () => {
       <header className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="bg-primary text-primary-foreground p-2 rounded-lg">
-                <Truck className="h-6 w-6" />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-foreground">
-                  OGUZHAN LLC
-                </h1>
-                <p className="text-sm text-muted-foreground">
-                  Trucking & Logistics
-                </p>
-              </div>
+            <div className="flex items-center">
+              <img
+                src="/oguzhan-logo.png"
+                alt="OGUZHAN LLC Logistics"
+                className="h-12 w-auto"
+              />
             </div>
             <nav className="hidden md:flex items-center space-x-6">
               <a
@@ -584,14 +578,12 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="bg-white text-gray-900 p-2 rounded-lg">
-                  <Truck className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold">OGUZHAN LLC</h3>
-                  <p className="text-sm text-gray-400">Trucking & Logistics</p>
-                </div>
+              <div className="mb-4">
+                <img
+                  src="/oguzhan-logo.png"
+                  alt="OGUZHAN LLC Logistics"
+                  className="h-10 w-auto brightness-0 invert"
+                />
               </div>
               <p className="text-gray-400 text-sm">
                 Professional transportation services you can trust. Safe,
