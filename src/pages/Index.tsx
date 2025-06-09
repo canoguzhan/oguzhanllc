@@ -185,7 +185,7 @@ const Index = () => {
               <Button
                 size="lg"
                 className="text-lg px-8"
-                onClick={() => window.open("tel:+15551234567", "_self")}
+                onClick={() => window.open("tel:+19299285805", "_self")}
               >
                 <Phone className="mr-2 h-5 w-5" />
                 Call Now
@@ -619,7 +619,28 @@ const Index = () => {
                     <Phone className="h-5 w-5 text-primary mr-3" />
                     <div>
                       <p className="font-medium">Phone</p>
-                      <p className="text-muted-foreground">(555) 123-4567</p>
+                      <div className="space-y-1">
+                        <p className="text-muted-foreground">
+                          <button
+                            onClick={() =>
+                              window.open("tel:+19299285805", "_self")
+                            }
+                            className="hover:text-primary transition-colors"
+                          >
+                            (929) 928-5805
+                          </button>
+                        </p>
+                        <p className="text-muted-foreground">
+                          <button
+                            onClick={() =>
+                              window.open("tel:+12272502476", "_self")
+                            }
+                            className="hover:text-primary transition-colors"
+                          >
+                            (227) 250-2476
+                          </button>
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -801,10 +822,18 @@ const Index = () => {
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>
                   <button
-                    onClick={() => window.open("tel:+15551234567", "_self")}
+                    onClick={() => window.open("tel:+19299285805", "_self")}
                     className="hover:text-white transition-colors text-left"
                   >
-                    (555) 123-4567
+                    (929) 928-5805
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => window.open("tel:+12272502476", "_self")}
+                    className="hover:text-white transition-colors text-left"
+                  >
+                    (227) 250-2476
                   </button>
                 </li>
                 <li>
