@@ -38,9 +38,27 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <img
-                src="/oguzhan-logo.png"
+                src="/oguzhan-logo.svg"
                 alt="OGUZHAN LLC Logistics"
                 className="h-12 w-auto"
+                onError={(e) => {
+                  // Fallback to text if logo fails to load
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = "none";
+                  target.parentElement!.innerHTML = `
+                    <div class="flex items-center space-x-3">
+                      <div class="bg-primary text-primary-foreground p-2 rounded-lg">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M3 4V1h18v3h-3v13l3 2v1H3v-1l3-2V4H3zm6 0v13h6V4H9zm-2 8h2v2H7v-2zm10 0h2v2h-2v-2z"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h1 class="text-xl font-bold text-foreground">OGUZHAN LLC</h1>
+                        <p class="text-sm text-muted-foreground">Trucking & Logistics</p>
+                      </div>
+                    </div>
+                  `;
+                }}
               />
             </div>
             <nav className="hidden md:flex items-center space-x-6">
@@ -580,9 +598,27 @@ const Index = () => {
             <div>
               <div className="mb-4">
                 <img
-                  src="/oguzhan-logo.png"
+                  src="/oguzhan-logo.svg"
                   alt="OGUZHAN LLC Logistics"
                   className="h-10 w-auto brightness-0 invert"
+                  onError={(e) => {
+                    // Fallback to text if logo fails to load
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = "none";
+                    target.parentElement!.innerHTML = `
+                      <div class="flex items-center space-x-3">
+                        <div class="bg-white text-gray-900 p-2 rounded-lg">
+                          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 4V1h18v3h-3v13l3 2v1H3v-1l3-2V4H3zm6 0v13h6V4H9zm-2 8h2v2H7v-2zm10 0h2v2h-2v-2z"/>
+                          </svg>
+                        </div>
+                        <div>
+                          <h3 class="text-lg font-bold text-white">OGUZHAN LLC</h3>
+                          <p class="text-sm text-gray-400">Trucking & Logistics</p>
+                        </div>
+                      </div>
+                    `;
+                  }}
                 />
               </div>
               <p className="text-gray-400 text-sm">
