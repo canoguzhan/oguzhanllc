@@ -46,7 +46,7 @@ const TermsOfService = () => {
             logistics services.
           </p>
           <p className="text-sm text-muted-foreground mt-2">
-            Last updated: December 2024
+            Last updated: June 09, 2025
           </p>
         </div>
 
