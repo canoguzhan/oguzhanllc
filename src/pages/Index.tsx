@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { QuoteForm } from "@/components/QuoteForm";
 import {
   Truck,
   MapPin,
@@ -573,73 +574,7 @@ const Index = () => {
               </div>
             </div>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>Request a Quote</CardTitle>
-                <CardDescription>
-                  Get a personalized quote for your transportation needs
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="text-sm font-medium mb-2 block">
-                      Pick-up Location
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="City, State"
-                      className="w-full px-3 py-2 border border-input rounded-md text-sm"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium mb-2 block">
-                      Delivery Location
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="City, State"
-                      className="w-full px-3 py-2 border border-input rounded-md text-sm"
-                    />
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="text-sm font-medium mb-2 block">
-                      Weight (lbs)
-                    </label>
-                    <input
-                      type="number"
-                      placeholder="10000"
-                      className="w-full px-3 py-2 border border-input rounded-md text-sm"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium mb-2 block">
-                      Pick-up Date
-                    </label>
-                    <input
-                      type="date"
-                      className="w-full px-3 py-2 border border-input rounded-md text-sm"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="text-sm font-medium mb-2 block">
-                    Cargo Description
-                  </label>
-                  <textarea
-                    placeholder="Describe your cargo..."
-                    rows={3}
-                    className="w-full px-3 py-2 border border-input rounded-md text-sm resize-none"
-                  />
-                </div>
-                <Button className="w-full" size="lg">
-                  <Calendar className="mr-2 h-4 w-4" />
-                  Get Quote Now
-                </Button>
-              </CardContent>
-            </Card>
+            <QuoteForm />
           </div>
         </div>
       </section>
