@@ -275,67 +275,128 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <Badge variant="secondary" className="mb-4">
-                About OGUZHAN LLC
+                About OGUZHAN LLC Logistics
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
                 Your Trusted Transportation Partner
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                With years of experience in the transportation industry, OGUZHAN
-                LLC has built a reputation for reliability, safety, and
-                exceptional service. We understand that your cargo is more than
-                just freight – it's your business.
+                As OGUZHAN LLC Logistics, with the knowledge and experience we
+                have gained over the years, the aim of our logistics service is
+                your unconditional customer satisfaction and by creating
+                long-term cooperation, we offer a holistic service approach with
+                our current technologies used in logistics service.
               </p>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center">
-                  <Target className="h-5 w-5 text-primary mr-3" />
-                  <span className="font-medium">
-                    On-time delivery guarantee
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <Shield className="h-5 w-5 text-primary mr-3" />
-                  <span className="font-medium">
-                    Comprehensive insurance coverage
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <Users className="h-5 w-5 text-primary mr-3" />
-                  <span className="font-medium">
-                    Experienced professional drivers
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <Zap className="h-5 w-5 text-primary mr-3" />
-                  <span className="font-medium">
-                    Modern fleet with latest technology
-                  </span>
-                </div>
+              <p className="text-lg text-muted-foreground mb-8">
+                OGUZHAN LLC Logistics continues to be a corporate logistics
+                company that offers flawless Land Transportation service
+                domestically and has brought countless innovations to the
+                sector.
+              </p>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-semibold mb-4 text-foreground">
+                  Our Mission
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  OGUZHAN LLC Logistics has set out with a mission to add value
+                  to our customers by bringing together excellence and trust in
+                  logistics solutions. We aim to be a pioneer in the sector with
+                  our customer-oriented approach, innovative solutions and
+                  sustainability principles. We contribute to optimizing our
+                  customers' business processes and their growth by ensuring
+                  reliability and operational excellence at every step.
+                </p>
+
+                <h3 className="text-xl font-semibold mb-4 text-foreground">
+                  Our Vision
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  Our vision is to maximize our customer satisfaction and offer
+                  our service to you with a strong organization, the use of the
+                  latest technology and environmentally sensitive approaches.
+                </p>
               </div>
+
               <Button size="lg">Learn More About Us</Button>
             </div>
-            <div className="grid grid-cols-2 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">500+</div>
-                <p className="text-sm text-muted-foreground">
-                  Successful Deliveries
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <p className="text-sm text-muted-foreground">States Covered</p>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-                <p className="text-sm text-muted-foreground">
-                  Customer Support
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">
-                  99.5%
+
+            <div className="space-y-6">
+              <h3 className="text-2xl font-semibold text-foreground mb-6">
+                Our Goals
+              </h3>
+
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <Zap className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-semibold block">
+                      Technological Leadership
+                    </span>
+                    <span className="text-sm text-muted-foreground">
+                      Optimizing logistics operations using innovative
+                      technologies and increasing customer satisfaction.
+                    </span>
+                  </div>
                 </div>
-                <p className="text-sm text-muted-foreground">On-Time Rate</p>
+
+                <div className="flex items-start">
+                  <Shield className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-semibold block">
+                      Sustainability & Environmental Responsibility
+                    </span>
+                    <span className="text-sm text-muted-foreground">
+                      Becoming a leader in sustainability by developing
+                      environmentally sensitive solutions.
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <Globe className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-semibold block">Global Impact</span>
+                    <span className="text-sm text-muted-foreground">
+                      To expand in the global market and become a strong brand
+                      in international logistics solutions.
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <Target className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-semibold block">
+                      Customer Satisfaction
+                    </span>
+                    <span className="text-sm text-muted-foreground">
+                      To support our customers' logistics processes by
+                      understanding their needs and offering flexible solutions.
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <Users className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-semibold block">
+                      Employee Satisfaction & Development
+                    </span>
+                    <span className="text-sm text-muted-foreground">
+                      To support our employees' professional and personal
+                      development and act with a strong team spirit.
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 p-4 bg-gray-50 rounded-lg">
+                <p className="text-sm text-muted-foreground italic">
+                  "In line with these goals, as OGUZHAN LLC Logistics, we are
+                  committed to adding value to both our business partners and
+                  society and building a sustainable future."
+                </p>
               </div>
             </div>
           </div>
