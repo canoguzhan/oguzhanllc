@@ -596,30 +596,35 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-            <div className="flex items-center">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fe8cf38e3baf04f94a1f5f6a7714c5a89%2F55d062d908cd4961acb7baf0e313d715"
-                alt="OGUZHAN LLC Logistics"
-                className="h-[100px] w-auto"
-                onError={(e) => {
-                  // Fallback to text if logo fails to load
-                  const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
-                  target.parentElement!.innerHTML = `
-                    <div class="flex items-center space-x-3">
-                      <div class="bg-primary text-primary-foreground p-2 rounded-lg">
-                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M3 4V1h18v3h-3v13l3 2v1H3v-1l3-2V4H3zm6 0v13h6V4H9zm-2 8h2v2H7v-2zm10 0h2v2h-2v-2z"/>
-                        </svg>
+              <div className="mb-4">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fe8cf38e3baf04f94a1f5f6a7714c5a89%2F55d062d908cd4961acb7baf0e313d715"
+                  alt="OGUZHAN LLC Logistics"
+                  className="h-10 w-auto brightness-0 invert"
+                  onError={(e) => {
+                    // Fallback to text if logo fails to load
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = "none";
+                    target.parentElement!.innerHTML = `
+                      <div class="flex items-center space-x-3">
+                        <div class="bg-white text-gray-900 p-2 rounded-lg">
+                          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 4V1h18v3h-3v13l3 2v1H3v-1l3-2V4H3zm6 0v13h6V4H9zm-2 8h2v2H7v-2zm10 0h2v2h-2v-2z"/>
+                          </svg>
+                        </div>
+                        <div>
+                          <h3 class="text-lg font-bold text-white">OGUZHAN LLC</h3>
+                          <p class="text-sm text-gray-400">Trucking & Logistics</p>
+                        </div>
                       </div>
-                      <div>
-                        <h1 class="text-xl font-bold text-foreground">OGUZHAN LLC</h1>
-                        <p class="text-sm text-muted-foreground">Trucking & Logistics</p>
-                      </div>
-                    </div>
-                  `;
-                }}
-              />
+                    `;
+                  }}
+                />
+              </div>
+              <p className="text-gray-400 text-sm">
+                Professional transportation services you can trust. Safe,
+                reliable, and on-time delivery nationwide.
+              </p>
             </div>
 
             <div>
