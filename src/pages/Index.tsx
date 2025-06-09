@@ -677,8 +677,23 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-gray-600 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              size="lg"
+              className="text-lg px-8"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Get Free Quote
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="text-lg px-8"
+              onClick={() => window.open('tel:+15551234567', '_self')}
+            >
+              Call (555) 123-4567
+            </Button>
+          </div>
               <div className="mb-4">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe8cf38e3baf04f94a1f5f6a7714c5a89%2Fd0f1444a40d8431e9a36f1cb7f958f7e"
