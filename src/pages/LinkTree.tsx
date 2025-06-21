@@ -33,9 +33,6 @@ const LinkTree = () => {
       <div className="w-full max-w-md space-y-6">
         {/* Header */}
         <div className="text-center space-y-4">
-          <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center">
-            <span className="text-white text-2xl font-bold">O</span>
-          </div>
           <div>
             <h1 className="text-2xl font-bold text-gray-900">Oguzhan LLC</h1>
             <p className="text-gray-600 mt-1">Connect with us</p>
@@ -66,7 +63,7 @@ const LinkTree = () => {
         {/* Footer */}
         <div className="text-center pt-6">
           <p className="text-sm text-gray-500">
-            © 2024 Oguzhan LLC. All rights reserved.
+            © 2025 Oguzhan LLC. All rights reserved.
           </p>
         </div>
       </div>
