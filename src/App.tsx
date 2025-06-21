@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
+import LinkTree from "./pages/LinkTree";
 import LongDistanceFreight from "./pages/services/LongDistanceFreight";
 import LocalRegional from "./pages/services/LocalRegional";
 import SpecializedCargo from "./pages/services/SpecializedCargo";
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/links" element={<LinkTree />} />
           <Route
             path="/services/long-distance-freight"
             element={<LongDistanceFreight />}
