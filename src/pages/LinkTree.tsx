@@ -33,6 +33,11 @@ const LinkTree = () => {
       <div className="w-full max-w-md space-y-6">
         {/* Header */}
         <div className="text-center space-y-4">
+          <img
+            src="/oguzhanlogo.png"
+            alt="Oguzhan LLC Logo"
+            className="w-24 h-24 mx-auto rounded-full object-cover shadow-md border border-gray-200 bg-white"
+          />
           <div>
             <h1 className="text-2xl font-bold text-gray-900">Oguzhan LLC</h1>
             <p className="text-gray-600 mt-1">Connect with us</p>
