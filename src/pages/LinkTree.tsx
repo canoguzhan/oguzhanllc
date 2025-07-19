@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ExternalLink, Globe, Instagram, Facebook } from "lucide-react";
+import { ExternalLink, Globe, Instagram, Facebook, Phone, Mail } from "lucide-react";
 
 const LinkTree = () => {
   const links = [
@@ -21,6 +21,24 @@ const LinkTree = () => {
       url: "https://facebook.com/oguzhanllc",
       icon: Facebook,
       color: "bg-blue-500 hover:bg-blue-600",
+    },
+    {
+      title: "Phone: +1 (227) 250-2476",
+      url: "tel:+12272502476",
+      icon: Phone,
+      color: "bg-green-600 hover:bg-green-700",
+    },
+    {
+      title: "Phone: +1 (929) 928-5805",
+      url: "tel:+19299285805",
+      icon: Phone,
+      color: "bg-green-600 hover:bg-green-700",
+    },
+    {
+      title: "Email: info@oguzhanllc.com",
+      url: "mailto:info@oguzhanllc.com",
+      icon: Mail,
+      color: "bg-yellow-500 hover:bg-yellow-600 text-gray-900 hover:text-gray-900",
     },
   ];
 
