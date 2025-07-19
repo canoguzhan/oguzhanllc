@@ -52,7 +52,7 @@ const LinkTree = () => {
         {/* Header */}
         <div className="text-center space-y-4">
           <img
-            src="/oguzhanlogo.png"
+            src="/logo.png"
             alt="Oguzhan LLC Logo"
             className="w-24 h-24 mx-auto rounded-full object-cover shadow-md border border-gray-200 bg-white"
           />
