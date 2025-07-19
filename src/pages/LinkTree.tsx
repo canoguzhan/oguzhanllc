@@ -54,7 +54,7 @@ const LinkTree = () => {
           <img
             src="/linkslogo.png"
             alt="Oguzhan LLC Logo"
-            className="w-80 h-32 mx-auto object-contain shadow-md bg-white"
+            className="w-80 h-48 mx-auto object-contain shadow-md bg-white"
           />
           <div>
             <h1 className="text-2xl font-bold text-gray-900">Oguzhan LLC</h1>
